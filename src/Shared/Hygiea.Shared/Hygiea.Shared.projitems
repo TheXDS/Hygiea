@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>881fa9ef-2fa8-4792-a2ab-2d4d1d021fe3</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Hygiea.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Component\BinaryReaders\ArrayReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Component\BinaryReaders\DateTimeBinaryReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Component\BinaryReaders\EnumBinaryReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Component\BinaryReaders\GuidBinaryReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Component\BinaryReaders\IBinaryReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Component\BinaryReaders\NullableBinaryReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Component\BinaryReaders\ObjectBinaryReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Component\BinaryReaders\ObjectType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Component\BinaryReaders\PrimitiveBinaryReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Component\BinaryReaders\SpecificTypeReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Component\ISetupManager.cs" />
+    <Compile Include="..\..\Shared\Hygiea.Shared\Component\ObjectReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\SetupState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\EndViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ErrorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FinishViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SetupPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SimpleCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\StreamSetupPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelBase.cs" />
+  </ItemGroup>
+</Project>

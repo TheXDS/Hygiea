@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.6.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Targets", "Targets", "{9DED1D58-BCCE-4087-8665-491D4BB8FFBE}"
+	ProjectSection(SolutionItems) = preProject
+		Targets\BuildPaths.props = Targets\BuildPaths.props
+		Targets\CompileOptions.targets = Targets\CompileOptions.targets
+		Targets\PackageInfo.props = Targets\PackageInfo.props
+		Targets\PackageVersion.props = Targets\PackageVersion.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{F655BD91-7B95-4238-A116-4432CE9703DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2808EFF0-16F4-4FAD-A636-E22A04330339}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{95D8F409-328A-4D58-8C60-4F4969B8B633}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{0188BA51-07CE-45F0-99F5-F57269B00354}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bundles", "Bundles", "{4B820A26-440A-4A70-A8E0-DC57DA5D67D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{DAC5ED4F-E8DB-45C7-8F30-0617EDB4BC72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{2B01CFBE-9EFC-4FC4-95ED-63D2BA83E364}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{92BD57DC-6E55-4B72-BD33-70A2901746E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{AC4F6D04-7E3E-4B96-9F25-85F89A5E5811}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+	EndProjectSection
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Hygiea.Shared", "C:\Users\xds_x\source\repos\thexds\Hygiea\src\Shared\Hygiea.Shared\Hygiea.Shared.shproj", "{881FA9EF-2FA8-4792-A2AB-2D4D1D021FE3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hygiea.Core", "C:\Users\xds_x\source\repos\thexds\Hygiea\src\Core\Hygiea.Core\Hygiea.Core.csproj", "{D0D26C69-8902-4D56-B1BE-B1DDC91099AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hygiea.Wpf", "src\Templates\Hygiea.Wpf\Hygiea.Wpf.csproj", "{A1CA9F0E-BEA1-4A06-B5C0-CDDD7BA31B94}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hygiea.Core.Tests", "src\Tests\Hygiea.Core.Tests\Hygiea.Core.Tests.csproj", "{218CA172-3E69-44EC-A4E1-D987E4F48BDA}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		C:\Users\xds_x\source\repos\thexds\Hygiea\src\Shared\Hygiea.Shared\Hygiea.Shared.projitems*{881fa9ef-2fa8-4792-a2ab-2d4d1d021fe3}*SharedItemsImports = 13
+		C:\Users\xds_x\source\repos\thexds\Hygiea\src\Shared\Hygiea.Shared\Hygiea.Shared.projitems*{a1ca9f0e-bea1-4a06-b5c0-cddd7ba31b94}*SharedItemsImports = 5
+		C:\Users\xds_x\source\repos\thexds\Hygiea\src\Shared\Hygiea.Shared\Hygiea.Shared.projitems*{d0d26c69-8902-4d56-b1be-b1ddc91099af}*SharedItemsImports = 5
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0D26C69-8902-4D56-B1BE-B1DDC91099AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D26C69-8902-4D56-B1BE-B1DDC91099AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D26C69-8902-4D56-B1BE-B1DDC91099AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D26C69-8902-4D56-B1BE-B1DDC91099AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1CA9F0E-BEA1-4A06-B5C0-CDDD7BA31B94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1CA9F0E-BEA1-4A06-B5C0-CDDD7BA31B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1CA9F0E-BEA1-4A06-B5C0-CDDD7BA31B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1CA9F0E-BEA1-4A06-B5C0-CDDD7BA31B94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{218CA172-3E69-44EC-A4E1-D987E4F48BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218CA172-3E69-44EC-A4E1-D987E4F48BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218CA172-3E69-44EC-A4E1-D987E4F48BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218CA172-3E69-44EC-A4E1-D987E4F48BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2808EFF0-16F4-4FAD-A636-E22A04330339} = {92BD57DC-6E55-4B72-BD33-70A2901746E3}
+		{95D8F409-328A-4D58-8C60-4F4969B8B633} = {92BD57DC-6E55-4B72-BD33-70A2901746E3}
+		{0188BA51-07CE-45F0-99F5-F57269B00354} = {92BD57DC-6E55-4B72-BD33-70A2901746E3}
+		{4B820A26-440A-4A70-A8E0-DC57DA5D67D3} = {92BD57DC-6E55-4B72-BD33-70A2901746E3}
+		{DAC5ED4F-E8DB-45C7-8F30-0617EDB4BC72} = {92BD57DC-6E55-4B72-BD33-70A2901746E3}
+		{2B01CFBE-9EFC-4FC4-95ED-63D2BA83E364} = {92BD57DC-6E55-4B72-BD33-70A2901746E3}
+		{881FA9EF-2FA8-4792-A2AB-2D4D1D021FE3} = {0188BA51-07CE-45F0-99F5-F57269B00354}
+		{D0D26C69-8902-4D56-B1BE-B1DDC91099AF} = {DAC5ED4F-E8DB-45C7-8F30-0617EDB4BC72}
+		{A1CA9F0E-BEA1-4A06-B5C0-CDDD7BA31B94} = {2B01CFBE-9EFC-4FC4-95ED-63D2BA83E364}
+		{218CA172-3E69-44EC-A4E1-D987E4F48BDA} = {2808EFF0-16F4-4FAD-A636-E22A04330339}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1773C981-5604-44B7-B319-FCAB26E83C0B}
+	EndGlobalSection
+EndGlobal
