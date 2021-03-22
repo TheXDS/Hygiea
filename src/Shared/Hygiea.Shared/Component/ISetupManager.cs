@@ -4,10 +4,13 @@ using TheXDS.Hygiea.ViewModel;
 
 namespace TheXDS.Hygiea.Component
 {
+    public interface ISetupManager<out T> : ISetupManager where T : notnull, MinimalSetupState, new()
+    {
+        T Settings { get; }
+    }
+
     public interface ISetupManager
     {
-        SetupState Settings { get; }
-
         SimpleCommand BackCommand { get; }
 
         SimpleCommand CancelCommand { get; }

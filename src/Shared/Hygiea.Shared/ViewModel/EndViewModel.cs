@@ -1,6 +1,6 @@
 ﻿namespace TheXDS.Hygiea.ViewModel
 {
-    public abstract class EndViewModel : SetupPageViewModel
+    public abstract class EndViewModel : SetupPageViewModel, ISetupPageViewModel
     {
         private readonly string _exitLabel;
         public EndViewModel() : this("Exit")
@@ -12,7 +12,7 @@
             _exitLabel = exitLabel;
         }
 
-        public override sealed void OnNavigated()
+        public void OnNavigated()
         {
             Setup.NextCommand.SetCanExecute(false);
             Setup.BackCommand.SetCanExecute(false);

@@ -3,14 +3,14 @@ using System.IO;
 
 namespace TheXDS.Hygiea.Component.BinaryReaders
 {
-    public abstract class SpecificTypeReader<T> : IBinaryReader where T : notnull
+    public abstract class SpecificTypeReader<T> : IBinaryReader
     {
         public bool CanRead(Type type)
         {
             return type == typeof(T);
         }
 
-        public object Read(Type type, BinaryReader reader)
+        public object? Read(Type type, BinaryReader reader)
         {
             return Read(reader);
         }

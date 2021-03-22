@@ -67,6 +67,7 @@ namespace TheXDS.Hygiea.Core.Tests.Component
                 bw.Write((byte)ObjectType.Instance);
                 bw.Write((byte)0);
                 bw.Write(1);
+                bw.Write((byte)ObjectType.Instance);
                 bw.Write("Test");
                 bw.Write(g.ToByteArray());
                 bw.Write(t.ToBinary());
@@ -76,6 +77,7 @@ namespace TheXDS.Hygiea.Core.Tests.Component
                 bw.Write((byte)ObjectType.Instance);
                 bw.Write((byte)0);
                 bw.Write(10);
+                bw.Write((byte)ObjectType.Instance);
                 bw.Write("Test10");
                 bw.Write(g.ToByteArray());
                 bw.Write(t.ToBinary());
@@ -96,8 +98,11 @@ namespace TheXDS.Hygiea.Core.Tests.Component
 
                 // string[]
                 bw.Write(3);
+                bw.Write((byte)ObjectType.Instance);
                 bw.Write("Test1");
+                bw.Write((byte)ObjectType.Instance);
                 bw.Write("Test2");
+                bw.Write((byte)ObjectType.Instance);
                 bw.Write("Test3");
 
                 // Guid[]
@@ -126,6 +131,7 @@ namespace TheXDS.Hygiea.Core.Tests.Component
                 bw.Write((byte)ObjectType.Instance);
                 bw.Write((byte)0);
                 bw.Write(2);
+                bw.Write((byte)ObjectType.Instance);
                 bw.Write("Test2");
                 bw.Write(g.ToByteArray());
                 bw.Write(t.ToBinary());

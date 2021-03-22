@@ -18,7 +18,7 @@ namespace TheXDS.Hygiea.Component.BinaryReaders
 
         public virtual bool CanRead(Type type)
         {
-            return GetReadMethod(type) is { };
+            return type != typeof(string) && GetReadMethod(type) is { };
         }
 
         public virtual object Read(Type type, BinaryReader reader)
