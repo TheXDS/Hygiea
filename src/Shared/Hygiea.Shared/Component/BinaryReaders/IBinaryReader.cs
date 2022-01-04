@@ -4,34 +4,31 @@ using System.IO;
 namespace TheXDS.Hygiea.Component.BinaryReaders
 {
     /// <summary>
-    /// Define una serie de miembros a implementar por un tipo que permita
-    /// obtener objetos desde un <see cref="BinaryReader"/>.
+    /// Defines a set of members to be implemented by a type that allows to
+    /// read objects from a <see cref="BinaryReader"/>.
     /// </summary>
     public interface IBinaryReader
     {
         /// <summary>
-        /// Comprueba que este <see cref="IBinaryReader"/> pueda leer objetos
-        /// del tipo especificado.
+        /// Checks if this <see cref="IBinaryReader"/> can read objects of the
+        /// specified type.
         /// </summary>
-        /// <param name="type">Tipo a comprobar.</param>
+        /// <param name="type">Type to check.</param>
         /// <returns>
-        /// <see langword="true"/> si este <see cref="IBinaryReader"/> puede
-        /// leer objetos del tipo especificado, <see langword="false"/> en caso
-        /// contrario.
+        /// <see langword="true"/> if this <see cref="IBinaryReader"/> can read
+        /// objects of the specified type, <see langword="false"/> otherwise.
         /// </returns>
         bool CanRead(Type type);
 
         /// <summary>
-        /// Lee un objeto desde el <see cref="BinaryReader"/> especificado.
+        /// Reads an object from the specified <see cref="BinaryReader"/>.
         /// </summary>
-        /// <param name="type">Tipo de objeto a leer.</param>
+        /// <param name="type">Type of object to read.</param>
         /// <param name="reader">
-        /// <see cref="BinaryReader"/> desde el cual leer la información para
-        /// construir el objeto.
+        /// <see cref="BinaryReader"/> from which to read the object.
         /// </param>
         /// <returns>
-        /// El objeto que se ha leído desde el <see cref="BinaryReader"/>
-        /// especificado.
+        /// The object read from the specified <see cref="BinaryReader"/>.
         /// </returns>
         object? Read(Type type, BinaryReader reader);
     }

@@ -3,26 +3,26 @@
 namespace TheXDS.Hygiea.Component.BinaryReaders
 {
     /// <summary>
-    /// Indica el tipo de objeto que se describe a continuación en el 
-    /// <see cref="BinaryReader"/> de origen.
+    /// Indicates the kind of the incoming object described in the source
+    /// <see cref="BinaryReader"/>.
     /// </summary>
     public enum ObjectType : byte
     {
         /// <summary>
-        /// Indica que la entrada no hace referencia ningún objeto, o sea, 
-        /// <see langword="null"/>.
+        /// Indicates that the incoming object is <see langword="null"/>.
         /// </summary>
         Null,
         /// <summary>
-        /// Indica que la entrada hace referencia a un objeto predeterminado
-        /// para el tipo. Generalmente los tipos <see langword="struct"/> se
-        /// alamcenan de esta forma.
+        /// Indicates that the object must be instanced using its default
+        /// constructor. <see langword="struct"/> values (except primitive
+        /// values) are always marked with this flag.
         /// </summary>
         Default,
         /// <summary>
-        /// Indica que la entrada hace referencia a una instancia de objeto con
-        /// un conjunto de parámetros de constructor y valores para las
-        /// propiedades que pueden ser escritas.
+        /// Indicates that the object will be instanced using a constructor,
+        /// selected by an <see cref="int"/> index, whose arguments follow
+        /// this definition. Property values will further follow the
+        /// constructor arguments.
         /// </summary>
         Instance
     }

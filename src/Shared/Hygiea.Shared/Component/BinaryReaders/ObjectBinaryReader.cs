@@ -6,8 +6,8 @@ using System.Linq;
 namespace TheXDS.Hygiea.Component.BinaryReaders
 {
     /// <summary>
-    /// Implementa un lector para clases simples que pueden ser descritas e
-    /// instanciadas a partir de sus propiedades o por medio de un constructor.
+    /// Implements a reader for objects that can be described by their
+    /// constructors and properties.
     /// </summary>
     public class ObjectBinaryReader : IBinaryReader
     {
@@ -47,18 +47,24 @@ namespace TheXDS.Hygiea.Component.BinaryReaders
             var o = Activator.CreateInstance(type, args.ToArray());
             foreach (var prop in type.GetProperties().Where(p => p.CanWrite))
             {
-                var t = prop.PropertyType;
-                prop.SetValue(o, ObjectReader.Read(t, reader));
+                prop.SetValue(o, ObjectReader.Read(prop.PropertyType, reader));
             }
             return o;
         }
 
-        public ObjectBinaryReader ExcludeType(Type type)
+        /// <summary>
+        /// Adds a new exclusion to the types any object reader can parse.
+        /// </summary>
+        /// <param name="type">Type to be excluded.</param>
+        public static void ExcludeType(Type type)
         {
             _exclusions.Add(type);
-            return this;
         }
 
-        public ObjectBinaryReader ExcludeType<T>() => ExcludeType(typeof(T));
+        /// <summary>
+        /// Adds a new exclusion to the types any object reader can parse.
+        /// </summary>
+        /// <typeparam name="T">Type to be excluded.</typeparam>
+        public static void ExcludeType<T>() => ExcludeType(typeof(T));
     }
 }

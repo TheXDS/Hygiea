@@ -4,7 +4,7 @@ using System.IO;
 namespace TheXDS.Hygiea.Component.BinaryReaders
 {
     /// <summary>
-    /// Implementa un lector para arreglos.
+    /// Implements an array reader.
     /// </summary>
     public class ArrayReader : IBinaryReader
     {
